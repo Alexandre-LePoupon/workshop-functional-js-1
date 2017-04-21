@@ -4,7 +4,11 @@ console.log(chalk.cyan('\nEXERCISE 3 LOADED\n'));
 
 const reverseString = (input) => {
 
-  // Your future job begins here ...
+if (input === "") {
+        return "";
+    } else {
+        return reverseString(input.substr(1)) + input.charAt(0);
+    }
 }
 
 module.exports = {
