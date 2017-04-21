@@ -13,8 +13,16 @@ var promiseStrings = new Promise(function (fulfill, reject) {
 
 const asyncYolo = (input) => {
 
-  // Your future job begins here ...
+ 	// promiseNumbers.then(console.log, onReject);
+ 	// promiseStrings.then(console.log, onReject);
 
+ 	promiseNumbers.then(function(result) {
+ 		
+ 	}, onReject);
+}
+
+function onReject(error) {
+    console.log(error.message);
 }
 
 module.exports = {
